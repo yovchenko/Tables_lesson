@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live pool</title>
+    <style type="text/css">
+   .block1 { 
+    width: 200px; 
+    background: #abb;
+    padding: 3px;
+    padding-right: 0px; 
+    border: solid 1px black; 
+    float: left;
+   }
+   .block2 { 
+    width: 180px; 
+    background: #fc0; 
+    padding: 3px; 
+    border: solid 1px black; 
+    float: left; 
+    position: relative; 
+    top: -94px; 
+    left: 0px;
+   }
+   .block3 { 
+    width: 380px; 
+    background: #efe; 
+    padding: 3px; 
+    border: solid 1px black; 
+    float: left; 
+    position: relative; 
+    top:     -29px; 
+    left: -188px;
+   }
+   </style>
+</head>
+<body>
+    <img src="Pictures/jazz.jpg" 
+  width="309" height="170"  alt="Keep-calm-and-listen-to-music">
+    </img>
+    <div class="block1">Please answer the following questions. Click "done" below to submit your responses.
+        </div>
+            <br>
+    <div class="block2">First name 
+    <form method="POST" action="https://formspree.io/yovchenko.w@gmail.com">
+                <label>
+                     <input type="text" name="client-name">
+                </label> 
+        </div>
+            <br><br><br> 
+    <div class="block2">
+                <label for="client-mail">E-mail</label>
+        
+                    <input type="e-mail" name="client-mail"
+                                 id="client-mail" required>
+    </div> 
+    <div class="block3">          
+                <label for="client-mail">Do you like Jazz music?</label><br>
+                    <input type="radio" name=like-jazz value="yes-love-jazz" checked>Yes,I Love Jazz<br>
+                    <input type="radio" name="best-jazz" value="jazz-is-the-best">Jazz is the best<br>
+                    <input type="radio" name="good-jazz" value="other"> Сегодня слушает он джаз,а завтра Родину продаст!
+    </div>
+    <br><br><br><br><br>
+                    <input type="submit" value="Send your answer">
+                    <input type="reset"  value="Leave me alone">
+     <a href="index.html" style="color:rgb(10,105,100)">Click here to to go back one page</a>
+    
+</form> 
+</body>
+</html>
