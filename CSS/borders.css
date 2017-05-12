@@ -12,7 +12,7 @@ table td {
     padding: 4px 8px;
 }
 
-table tr:background-color: #e7edf0; td {    <!--nth-child(odd)-->
+table tr {    
     background-color: #e7edf0;
 }
     

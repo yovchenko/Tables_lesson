@@ -10,61 +10,78 @@
     padding: 3px;
     padding-right: 0px; 
     border: solid 1px black; 
-    float: left;
+    float:left;
    }
    .block2 { 
-    width: 180px; 
+    width: 180px;
+    height: 80px;
     background: #fc0; 
     padding: 3px; 
-    border: solid 1px black; 
-    float: left; 
-    position: relative; 
-    top: -94px; 
-    left: 0px;
+    margin: 5px;
+    border: solid 1px black;
+    float: left;
+    
    }
    .block3 { 
     width: 380px; 
     background: #efe; 
     padding: 3px; 
+    margin: 5px;
     border: solid 1px black; 
-    float: left; 
-    position: relative; 
-    top:     -29px; 
-    left: -188px;
+    float:left;
    }
+   
+   .image {
+       float:left;
+   }
+   
+   .input {
+       display: inline-block;
+   }
+    
+form {
+   display: inline;
+}
    </style>
 </head>
 <body>
-    <img src="Pictures/jazz.jpg" 
-  width="309" height="170"  alt="Keep-calm-and-listen-to-music">
-    </img>
+    
     <div class="block1">Please answer the following questions. Click "done" below to submit your responses.
         </div>
-            <br>
-    <div class="block2">First name 
-    <form method="POST" action="https://formspree.io/yovchenko.w@gmail.com">
-                <label>
+            <div class="image">
+                <img src="pictures/jazz.jpg" 
+                     width="309" height="170"  alt="Keep-calm-and-listen-to-music">
+                </img>
+            </div>
+<br><br><br><br><br><br><br><br><br>
+<form method="POST" action="https://formspree.io/yovchenko.w@gmail.com">
+    <div class="block2">
+    
+                <label>First name 
                      <input type="text" name="client-name">
                 </label> 
         </div>
-            <br><br><br> 
+           
     <div class="block2">
                 <label for="client-mail">E-mail</label>
         
                     <input type="e-mail" name="client-mail"
                                  id="client-mail" required>
     </div> 
+    <br><br><br><br><br>
     <div class="block3">          
-                <label for="client-mail">Do you like Jazz music?</label><br>
+                <label for="some-label">Do you like Jazz music?</label><br>
                     <input type="radio" name="good-jazz" value="yes-love-jazz" checked>Yes,I Love Jazz<br>
                     <input type="radio" name="good-jazz" value="jazz-is-the-best">Jazz is the best<br>
                     <input type="radio" name="good-jazz" value="other" checked> Сегодня слушает он джаз,а завтра Родину продаст!
                    
     </div>
-    <br><br><br><br><br> 
+    <br><br><br><br><br><br>
+    <div class="input">
                     <input type="submit" value="Send your answer">
                     <input type="reset"  value="Leave me alone">
      <a href="index.html" style="color:rgb(10,105,100)">Click here to to go back one page</a>
+     </div>
     
 </form> 
 </body>
