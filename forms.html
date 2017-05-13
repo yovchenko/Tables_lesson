@@ -49,12 +49,16 @@
    }
    
    .wrapper {
-     
+    display: flex;
    }
     
 form {
    display: flex;
    flex-direction: column;
+}
+
+.block-forms {
+    flex-direction: column;
 }
 
    </style>
@@ -64,6 +68,7 @@ form {
     <div class="block1"><span class="text">Please answer the following questions. Click "done" below to submit your responses.</span>
         </div>
     <div class="wrapper">        
+    <div class="block-forms">
     <div class="block2">
     
                 <label>First name 
@@ -76,6 +81,7 @@ form {
                     <input type="e-mail" name="client-mail"
                                  id="client-mail" required>
                 </label>
+    </div>
     </div>
     <div class="image">
             <img src="pictures/jazz.jpg" alt="pictures jazz">
