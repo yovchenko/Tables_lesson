@@ -6,16 +6,15 @@
     <style type="text/css">
     
    .block1 {
+    max-width: 500px; 
     background: #abb;
     border: solid 1px black; 
     padding: 3px; 
     margin: 5px;
-    max-width: 380px;
-    
    }
    
    .block2 { 
-    width: 180px;
+    max-width: 180px;
     height: 80px;
     background: #fc0; 
     padding: 3px; 
@@ -24,7 +23,7 @@
    }
    
    .block3 { 
-    width: 380px; 
+    max-width: 500px; 
     background: #efe; 
     padding: 3px; 
     margin: 5px;
@@ -33,19 +32,17 @@
    }
    
    img {
-    width:309px;  
+    max-width:309px;  
     height:181px; 
     
    }
    
    .image {
     margin: 5px;
-    
-       
    }
    
-   .input {
-       
+  .block2 > label > input {
+    width: 90%;
    }
    
    .wrapper {
@@ -93,13 +90,13 @@ form {
                 <label for="some-label">Do you like Jazz music?<br>
                     <input type="radio" name="good-jazz" value="yes-love-jazz" checked>Yes,I Love Jazz<br>
                     <input type="radio" name="good-jazz" value="jazz-is-the-best">Jazz is the best<br>
-                    <input type="radio" name="good-jazz" value="other" checked> Сегодня слушает он джаз,а завтра Родину продаст!
+                    <input type="radio" name="good-jazz" value="other"> Сегодня слушает он джаз,а завтра Родину продаст!
                 </label>
     </div>
-   
+    <br>
     <div class="input">
                     <input type="submit" value="Send your answer">
-                    <input type="reset"  value="Leave me alone">
+                    <input type="reset"  value="Leave me alone"><br><br>
      <a href="index.html" style="color:rgb(10,105,100)">Click here to to go back one page</a>
      </div>
     
